@@ -10,3 +10,9 @@
 		D:\Eclipse\WorkSpace\WS_2\NdkHelloWorld> ndk-build
 	This will generate the .so/.dll file which was loaded in JNILib.java file
 8.	everything is ready now -> run the project.
+----------------------------------------------------------------------------------
+UPDATE: 2nd Commit
+The above procedure is only to generate the library for ARM-Architecture devices.
+For generating the library for all the supported architecture, please follow the below commands -
+		D:\Eclipse\WorkSpace\WS_2\NdkHelloWorld> ndk-build clean			(this is to clean all the pre-existing built libraries.)
+		D:\Eclipse\WorkSpace\WS_2\NdkHelloWorld> ndk-build APP_ABI=all		(actual command to build for all the supported ABI)
