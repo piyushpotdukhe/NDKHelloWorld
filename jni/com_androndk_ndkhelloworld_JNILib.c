@@ -6,12 +6,12 @@
 
 JNIEXPORT jstring JNICALL Java_com_androndk_ndkhelloworld_JNILib_createFileInCNDK(JNIEnv *env, jobject jobj) {
 
-	FILE* file = fopen("/data/data/com.androndk.ndkhelloworld/files/NDKfile2.txt","w+");
+	FILE* file = fopen("/data/data/com.androndk.ndkhelloworld/NDKfileN.txt","w+");
 
-	if (NULL == file){
+	if (file == NULL){
 		return (*env)->NewStringUTF(env, "PIYUSh: ERROR: File creation FAILED in C-NDK");
 	} else {
-		return (*env)->NewStringUTF(env, "PIYUSh: File created in C-NDK (FileName=NDKfile2.txt)");
+		return (*env)->NewStringUTF(env, "PIYUSh: File created in C-NDK (FileName=NDKfileN.txt)");
 	}
 
 }
