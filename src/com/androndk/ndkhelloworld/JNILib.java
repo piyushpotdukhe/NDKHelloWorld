@@ -9,5 +9,8 @@ public class JNILib {
 	}
 	
 	public native String getMessage();
+	public native String writeToFileInCNDK();
+	public native String readFromFileInCNDK();
+	public native String createFileInCNDK();
 
 }

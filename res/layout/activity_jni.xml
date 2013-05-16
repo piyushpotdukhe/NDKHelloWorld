@@ -9,7 +9,7 @@
         android:id="@+id/BTN_showTextFromCFile"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Show Text From C File."
+        android:text="Show Text From C-NDK ReturnStatement."
         android:onClick="BTN_showTextFromCFile_onClick" />
     
     <Button
@@ -17,7 +17,7 @@
         android:layout_below="@id/BTN_showTextFromCFile"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Read From File."
+        android:text="Read From File From C-NDK."
         android:onClick="BTN_readFromFile_onClick" />
  
     <Button
@@ -25,6 +25,22 @@
         android:layout_below="@id/BTN_readFromFile"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Write To File."
+        android:text="Write To File From C-NDK."
         android:onClick="BTN_writeToFile_onClick" />
+   
+    <Button
+        android:id="@+id/BTN_createFileInJava"
+        android:layout_below="@id/BTN_writeToFile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create File In Java."
+        android:onClick="BTN_createFileInJava_onClick" />
+    
+        <Button
+        android:id="@+id/BTN_createFileInNDK"
+        android:layout_below="@id/BTN_createFileInJava"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create File In C-NDK."
+        android:onClick="BTN_createFileInNDK_onClick" />
 </RelativeLayout>

@@ -15,6 +15,30 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_androndk_ndkhelloworld_JNILib_getMessage
   (JNIEnv *, jobject);
 
+/*
+ * Class:     com_androndk_ndkhelloworld_JNILib
+ * Method:    writeToFileInCNDK
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_androndk_ndkhelloworld_JNILib_writeToFileInCNDK
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     com_androndk_ndkhelloworld_JNILib
+ * Method:    readFromFileInCNDK
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_androndk_ndkhelloworld_JNILib_readFromFileInCNDK
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     com_androndk_ndkhelloworld_JNILib
+ * Method:    createFileInCNDK
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_androndk_ndkhelloworld_JNILib_createFileInCNDK
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif
